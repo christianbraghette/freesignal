@@ -1,0 +1,52 @@
+{
+  "name": "@freesignal/crypto",
+  "version": "0.11.0",
+  "description": "Crypto package for Freesignal Protocol",
+  "homepage": "https://github.com/christianbraghette/freesignal-crypto#readme",
+  "bugs": {
+    "url": "https://github.com/christianbraghette/freesignal-crypto/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christianbraghette/freesignal-crypto.git"
+  },
+  "license": "GPL-3.0-or-later",
+  "author": "Christian Braghette",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./legacy": {
+      "import": "./dist/legacy.js",
+      "require": "./dist/legacy.js",
+      "types": "./dist/legacy.d.ts"
+    },
+    "./static": {
+      "import": "./dist/static.js",
+      "types": "./dist/static.d.ts"
+    },
+    "./utils": {
+      "import": "./dist/utils.js",
+      "types": "./dist/utils.d.ts"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "prepare": "tsc",
+    "pretest": "tsc",
+    "test": "node dist/test.js"
+  },
+  "dependencies": {
+    "@msgpack/msgpack": "^3.1.3",
+    "libsodium-wrappers": "^0.7.15",
+    "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "@freesignal/protocol": "^0.11.0",
+    "@types/libsodium-wrappers": "^0.7.14",
+    "@types/node": "^22.15.21"
+  }
+}

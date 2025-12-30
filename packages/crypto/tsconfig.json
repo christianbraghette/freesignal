@@ -1,0 +1,18 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "references": [
+    {
+      "path": "../protocol"
+    }
+  ],
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist"
+  },
+  "exclude": [
+    "./dist"
+  ],
+  "include": [
+    "./src"
+  ]
+}

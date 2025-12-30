@@ -1,0 +1,18 @@
+{
+  "name": "freesignal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -b",
+    "prepare": "npm run build"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "keywords": [],
+  "author": "Christian Braghette",
+  "license": "GPL-3.0-only",
+  "type": "module",
+  "private": true
+}
