@@ -2,13 +2,13 @@
   "name": "@freesignal/protocol",
   "version": "0.11.0",
   "description": "Signal Protocol implementation in TypeScript",
-  "homepage": "https://github.com/christianbraghette/freesignal-protocol#readme",
+  "homepage": "https://github.com/christianbraghette/freesignal#readme",
   "bugs": {
-    "url": "https://github.com/christianbraghette/freesignal-protocol/issues"
+    "url": "https://github.com/christianbraghette/freesignal/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/christianbraghette/freesignal-protocol.git"
+    "url": "git+https://github.com/christianbraghette/freesignal.git"
   },
   "license": "GPL-3.0-or-later",
   "author": "Christian Braghette",
@@ -29,6 +29,9 @@
     "pretest": "npm run build",
     "test": "node ./dist/test.js",
     "prepare": "npm run build"
+  },
+  "peerDependencies": {
+    "@freesignal/crypto": "^0.11.0"
   },
   "devDependencies": {
     "@types/node": "^24.2.1",

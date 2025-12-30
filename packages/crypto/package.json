@@ -2,13 +2,13 @@
   "name": "@freesignal/crypto",
   "version": "0.11.0",
   "description": "Crypto package for Freesignal Protocol",
-  "homepage": "https://github.com/christianbraghette/freesignal-crypto#readme",
+  "homepage": "https://github.com/christianbraghette/freesignal#readme",
   "bugs": {
-    "url": "https://github.com/christianbraghette/freesignal-crypto/issues"
+    "url": "https://github.com/christianbraghette/freesignal/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/christianbraghette/freesignal-crypto.git"
+    "url": "git+https://github.com/christianbraghette/freesignal.git"
   },
   "license": "GPL-3.0-or-later",
   "author": "Christian Braghette",
