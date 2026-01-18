@@ -2,4 +2,4 @@ src
 
 dist/test*
 .gitignore
-tsconfig.json
+tsconfig*
