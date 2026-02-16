@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc -b",
-    "postinstall": "cpx \"node_modules/libsodium/dist/modules-esm/libsodium.mjs\" \"node_modules/libsodium-wrappers/dist/modules-esm/\"",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "pretest": "npm run build",
+    "test": "cd packages/protocol && npm test"
   },
   "workspaces": [
     "packages/*"
@@ -15,8 +16,5 @@
   "author": "Christian Braghette",
   "license": "GPL-3.0-only",
   "type": "module",
-  "private": true,
-  "devDependencies": {
-    "cpx2": "^8.0.0"
-  }
+  "private": true
 }

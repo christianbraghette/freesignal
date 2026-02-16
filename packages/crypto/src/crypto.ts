@@ -39,7 +39,7 @@ export class CryptoConstructor extends SodiumCrypto implements Crypto {
         try {
             if (algorithm !== 'blake2b')
                 throw new Error("Algorithm not supported");
-            return this.sodium.crypto_generichash(32, message);
+            return this.sodium.crypto_generichash(32, message, null);
         } catch (error) {
             throw error;
         }
@@ -194,7 +194,7 @@ class EdDSAConstructor extends SodiumCrypto implements Crypto.EdDSA {
 
     public keyPairFromSeed(seed: Uint8Array): Crypto.KeyPair {
         try {
-            seed = this.sodium.crypto_generichash(this.sodium.crypto_sign_SEEDBYTES, seed);
+            seed = this.sodium.crypto_generichash(this.sodium.crypto_sign_SEEDBYTES, seed, null);
             const keys = this.sodium.crypto_sign_seed_keypair(seed);
             return { secretKey: keys.privateKey, publicKey: keys.publicKey };
         } catch (error) {

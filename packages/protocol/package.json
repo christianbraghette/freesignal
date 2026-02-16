@@ -1,6 +1,6 @@
 {
   "name": "@freesignal/protocol",
-  "version": "0.11.0",
+  "version": "0.11.1",
   "description": "Signal Protocol implementation in TypeScript",
   "homepage": "https://github.com/christianbraghette/freesignal#readme",
   "bugs": {
