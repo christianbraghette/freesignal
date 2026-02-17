@@ -1,7 +1,7 @@
 import type { Crypto } from '@freesignal/protocol/interfaces';
 import { CryptoConstructor } from './crypto.js';
 import sodium from "libsodium-wrappers";
-import msgpack from '@msgpack/msgpack';
+import * as msgpack from 'msgpackr';
 
 await sodium.ready;
 

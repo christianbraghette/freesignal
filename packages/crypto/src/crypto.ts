@@ -18,7 +18,7 @@
  */
 
 import type sodium from 'libsodium-wrappers';
-import type msgpack from '@msgpack/msgpack';
+import type * as msgpack from 'msgpackr';
 import type { Crypto } from '@freesignal/protocol/interfaces';
 import { stringify, parse, v4 as uuidv4 } from 'uuid';
 
